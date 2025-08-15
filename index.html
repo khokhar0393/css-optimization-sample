@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CSS Cleanup Demo</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="container py-2">
+    <h1 class="title">CSS Cleanup Demo</h1>
+    <nav class="nav">
+      <a class="nav-link is-active" href="#">Home</a>
+      <a class="nav-link" href="#">About</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Kept Classes</h2>
+      <p>These classes are referenced in markup and should remain after purge.</p>
+      <button class="btn" id="open">Open Modal</button>
+    </section>
+  </main>
+
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <h3>Modal</h3>
+      <button class="btn" id="close">Close</button>
+    </div>
+  </div>
+
+  <script>
+    const modal = document.getElementById('modal');
+    document.getElementById('open').onclick = () => modal.classList.add('is-open');
+    document.getElementById('close').onclick = () => modal.classList.remove('is-open');
+  </script>
+</body>
+                                            </html>
