@@ -1,0 +1,20 @@
+/* --- Needed styles (will be kept) --- */
+.container { max-width: 900px; margin: 0 auto; padding: 0 16px; }
+.py-2 { padding: 16px 0; }
+.title { font-size: 24px; font-weight: 700; }
+.nav { display: flex; gap: 12px; }
+.nav-link { text-decoration: none; opacity: 0.7; }
+.nav-link.is-active { opacity: 1; }
+.card { border: 1px solid #ddd; padding: 16px; border-radius: 8px; }
+.btn { padding: 8px 14px; border: 1px solid #333; background: #fff; cursor: pointer; }
+
+.modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.4); }
+.modal.is-open { display: grid; place-items: center; }
+.modal-content { background: #fff; padding: 24px; border-radius: 8px; }
+
+/* --- Unused demo styles (should be purged) --- */
+.hero { background: pink; }               /* not used */
+.footer { padding: 50px; }                /* not used */
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; } /* not used here */
+.md\\:block { display: block; }           /* example utility selector */
+.col-3 { width: 33.33%; }                 /* not used here */
